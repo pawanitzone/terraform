@@ -8,6 +8,11 @@ echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg
 sudo apt-get update -y
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 
+##change cgroupfs to systemd
+cat <<EOF | sudo tee /etc/docker/daemon.json
+{ "exec-opts": ["native.cgroupdriver=systemd"] }
+EOF
+
 cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
 br_netfilter
 EOF
