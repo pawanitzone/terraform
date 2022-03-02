@@ -84,9 +84,3 @@ resource "aws_ec2_tag" "k8sworker-node-tag" {
   key         = "kubernetes.io/cluster/c-minion1"
   value       = "owned"
 }
-
-#resource "aws_ec2_tag" "k8s-node-tag" {
-#  key = "kubernetes.io/cluster/c-minion1"
-#  value = "owned"
-#  resource_id = [aws_instance.k8s-master.id, aws_instance.k8s-worker-node-1a.id, aws_instance.k8s-worker-node-1b.id, aws_instance.k8s-worker-node-1c.id]
-#}
