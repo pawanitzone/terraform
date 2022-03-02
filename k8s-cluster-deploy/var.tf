@@ -27,12 +27,12 @@ variable "instance-type" {
 variable "ec2-public-key" {
   type = map
   default = {
-    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzRPFEGwjBM//lMpcy/Apxz1CiwRmi9WDXGHSCZOiDzYaDgU9i58xZwTla94FbYgfo8H/zXKKuJy4q9gaGjhekZBVIYEfaZHdPqtOrhqrhxd28dSyC83xteV+vulpF35i3BRZh2Z542xEWokwdjVRhUeKwYZTnDeXD6wJFZOQSe0kYuzeNnbyHFI3zg6ZOs7DLAkjU3axtKYpQlajaPwbCw7LU2ZXCVkGkXunt7L77/Bilh9yqR3xwrF1zMPvaFvNXTFQdHB7dMK5SdlbXE4caPRJ5hU+g6PjajT3sJfQrlGWZhayFw6Fkcijb2svuEMNEOYu7iCeac/sZ01zlSgZ3bIl2Gm0rz4XpsevMrcPrwZnq4V7V9r0M4jAy+QHETOBCq4TmapvzJNGcoZ+yFV3LZe1Khtd04o0ODXnTro71TAQUY3z0CmCHZLpi0A7C6Uue6CCZ38lbPwT+8s5XNiWOg2gv3RmFa+Q1wfqPi6gosFdluBYxNiiwXEPF49e1YyE= pawkumar@C02CCEGSMD6M"
+    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDmSKIq8GcxEgBKD0dudkWBuvnRP/RLD7nObEOQaHoP/1FNpyF0hYBHkTcXBn5mMD/CZKFY6Ph1v1xKcGbcqDX785JQDwW0xNS5wuAHCTCb3c90472Ey52oPXizalMTHXwh+cUPECSey1Xx74/oOxnIZ7g1cti+gtaUGTR0S95S6EtZ+5CB81qEFuIiwsVKqTFhi32C+RGX80Zc41Qx17n5axP/NH1KBmXkX3HlEBp+v3hjPEozPAobEWRB5CtnJcMU6Xlsq8HP2p1/aQa3+TCOe10mjIyW8EUR79ifiuOgTQZZD640tletmF6caff246dTecxpuLNx9oFVHiU0/ezDClxuPp9JkVAk/O6L3iFsTt2pOLobkkuMu++TxSh6pi4USj/N0840g1Migp42+RNPqG8j53gS01A0sEGotuLBiBL6SepUGF3JPOEvEnkqKPcMOGMisn3JY/jncP71RjvR0RHwn+QyLFgpNyP+WDlaIYVvGUCRjRxxOY/cOoJBEf0= pawan@LAPTOP-MGNJRS7N"
   }
 }
 
 variable "ubunut-ec2-private-key" {
-  default = "/Users/pawkumar/.ssh/id_rsa"
+  default = "~/.ssh/id_rsa"
 
 }
 
