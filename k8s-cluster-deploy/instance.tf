@@ -74,6 +74,17 @@ resource "aws_instance" "k8s-worker-node-1c" {
 
 }
 **/
+resource "aws_ec2_tag" "k8smaster-node-tag" {
+  resource_id = aws_instance.k8s-master.id
+  key         = "kubernetes.io/cluster/c-minion1"
+  value       = "owned"
+}
+resource "aws_ec2_tag" "k8sworker-node-tag" {
+  resource_id = aws_instance.k8s-worker-node-1a.id
+  key         = "kubernetes.io/cluster/c-minion1"
+  value       = "owned"
+}
+
 #resource "aws_ec2_tag" "k8s-node-tag" {
 #  key = "kubernetes.io/cluster/c-minion1"
 #  value = "owned"
